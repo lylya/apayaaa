@@ -3,27 +3,39 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Untuk Kamu 💖</title>
+
+		<title>Untuk Kamuu 💖</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
 
 		<style>
 			body {
-				background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-				font-family: "Comic Sans MS", cursive;
+				margin: 0;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: linear-gradient(135deg, #ff9a9e, #fecfef);
+				font-family: "Poppins", sans-serif;
 				text-align: center;
+				color: white;
+			}
+
+			.container {
 				padding: 20px;
-				color: #fff;
 			}
 
 			h1 {
+				font-family: "Pacifico", cursive;
 				font-size: 8vw;
-			}
-
-			p {
-				font-size: 4vw;
+				margin-bottom: 10px;
 			}
 
 			.heart {
-				font-size: 12vw;
+				font-size: 15vw;
 				animation: beat 1s infinite;
 			}
 
@@ -32,69 +44,80 @@
 					transform: scale(1);
 				}
 				50% {
-					transform: scale(1.3);
+					transform: scale(1.2);
 				}
 				100% {
 					transform: scale(1);
 				}
 			}
 
-			button {
-				padding: 12px 20px;
-				border: none;
-				border-radius: 20px;
-				background: #ff6b81;
-				color: white;
+			p {
 				font-size: 4vw;
-				cursor: pointer;
+				opacity: 0.9;
+			}
+
+			button {
 				margin-top: 20px;
+				padding: 12px 25px;
+				border: none;
+				border-radius: 30px;
+				background: white;
+				color: #ff6b81;
+				font-size: 4vw;
+				font-weight: bold;
+				cursor: pointer;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			button:hover {
+				transform: scale(1.05);
 			}
 
 			#message {
-				margin-top: 20px;
 				display: none;
+				margin-top: 20px;
 			}
 
 			#photo {
 				margin-top: 20px;
 				display: none;
 				opacity: 0;
-				transform: scale(0.8);
-				transition: all 0.8s ease;
-			}
-
-			#photo img {
-				width: 80%;
-				max-width: 300px;
-				border-radius: 20px;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+				transform: translateY(20px);
+				transition: 0.8s;
 			}
 
 			#photo.show {
 				display: block;
 				opacity: 1;
-				transform: scale(1);
+				transform: translateY(0);
+			}
+
+			#photo img {
+				width: 70%;
+				max-width: 250px;
+				border-radius: 20px;
 			}
 		</style>
 	</head>
 
 	<body>
-		<h1>Hai Sayangggg 💕</h1>
-		<div class="heart">❤️</div>
+		<div class="container">
+			<h1>Hai Sayang 💕</h1>
+			<div class="heart">❤️</div>
 
-		<p>Tau gakkkkk...</p>
+			<p>Tau gakkkk...</p>
 
-		<button onclick="showAll()">Klik di sini 💌</button>
+			<button onclick="showAll()">Klik di sini 💌</button>
 
-		<div id="message">
-			<p>Kamu itu spesial banget buat aku 💖</p>
-			<p>Makasih ya udah ada di hidup aku 🥺</p>
-			<p>I love you 💕</p>
-			<p>Mau tiummmmmm xixi</p>
-		</div>
+			<div id="message">
+				<p>Kamu itu dunia aku 💖</p>
+				<p>Makasih udah selalu ada 🥺</p>
+				<p>I love you 💕</p>
+			</div>
 
-		<div id="photo">
-			<img src="us.jpg" alt="Foto Kita" />
+			<div id="photo">
+				<img src="us.jpeg" />
+			</div>
 		</div>
 
 		<audio id="bgMusic" loop>
